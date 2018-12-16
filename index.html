@@ -11,7 +11,6 @@
 
 		body {
 			margin: 0;
-			height: 100%;
 			display: flex;
 			flex-direction: column;
 		}
@@ -29,17 +28,20 @@
 			padding: 15px 20px;
 		}
 
-		nav {
-			height: 40px;
-			background-color: lightgrey;
+		.nav {
+			background-color: lightgray;
 			display: flex;
 			justify-content: center;
+            position: relative;
+            z-index: 300;
+            margin-bottom: 50px;
 		}
 
 		.nav-button {
 			padding: 10px 10px;
 			background-color: lightgrey;
 			cursor: pointer;
+            height: 100%;
 		}
 
 		.nav-button:hover {
@@ -58,6 +60,7 @@
 			height: 400px;
 			background-color: darkgrey;
 			position: relative;
+            margin-top: 38px;
 			margin-bottom: 70px;
 		}
 		
@@ -196,19 +199,20 @@
 	<header>
 		<h1 class="header-title">WEBSITE</h1>
 	</header>
-	<nav>
+    
+	<div class="nav">
 		<a class="nav-button">Home</a>
 		<a class="nav-button">About</a>
 		<a class="nav-button">Gallery</a>
 		<a class="nav-button">Contact</a>
-	</nav>
-	
+	</div>
+    
 	<div class="content">
 
 		<div class="spotlight">
 			<p class="spotlight-info">2/4</p>
-			<div class="arrow-l"><</div>
-			<div class="arrow-r">></div>
+			<div class="arrow-l">a</div>
+			<div class="arrow-r">a</div>
 			<div class="dots">
 				<div class="dot"></div>
 				<div class="dot"></div>
@@ -216,7 +220,6 @@
 				<div class="dot"></div>
 			</div>
 		</div>
-		
 		<div class="body-header">
 			<h2>What We Do</h2>
 		</div>
